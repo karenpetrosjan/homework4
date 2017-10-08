@@ -39,14 +39,14 @@ return loop(str.length-1);
 console.log(reverse("abcd"));
 
 
-var checkerboard=function(size) {
-    var symGen=function(symbol,width) {
+const checkerboard=function(size) {
+    const symGen=function(symbol,width) {
         if(width===0) {
             return "";
         }
         return symbol + symGen(symbol, width - 1);
     }
-     var loop=function(height) {
+     const loop=function(height) {
      if(height===size) {
          return "";
      } if (height%2) {
